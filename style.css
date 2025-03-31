@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --mainorange: #ff770f;
+    --fontblack: rgb(77 ,75 ,75);
+}
+
+.logo img {
+    height: 80px;
+    width: 200px;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .toggle-icon {
+    background-color: var(--mainorange);
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+
+header .fa-bars,
+header .fa-xmark{
+    color: white;
+    font-size: 20px;
+}
+
+header .right {
+    width: 50%;
+}
+
+header .right ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .right ul li :not(.org-btn , .active){
+    color: var(--fontblack);
+    font-size: 15px;
+}
+
+.org-btn{
+    padding: 15px 35px;
+    background-color: var(--mainorange);
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.active{
+    color: var(--mainorange);
+}
+
