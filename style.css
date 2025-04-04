@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +15,7 @@
 :root {
     --mainorange: #ff770f;
     --fontblack: rgb(77, 75, 75);
+    --heading: berkshire swash;
 }
 
 .logo img {
@@ -85,6 +90,32 @@ header .right ul li :not(.org-btn, .active) {
     color: var(--mainorange);
 }
 
+.sec1 {
+    height: 100vh;
+    width: 100%;
+    background:  url(images/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.sec1 .content h1{
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0;
+    font-family: var(--heading);
+}
+
+.sec1 .content h2 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px 0;
+}
 @media only screen and (max-width: 950px) {
     header {
         flex-direction: column;
