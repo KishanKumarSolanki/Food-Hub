@@ -10,12 +10,13 @@
 
 :root {
     --mainorange: #ff770f;
-    --fontblack: rgb(77 ,75 ,75);
+    --fontblack: rgb(77, 75, 75);
 }
 
 .logo img {
-    height: 80px;
+    height: 150px;
     width: 200px;
+
 }
 
 header {
@@ -47,7 +48,7 @@ header .toggle-icon {
 
 
 header .fa-bars,
-header .fa-xmark{
+header .fa-xmark {
     color: white;
     font-size: 20px;
 }
@@ -62,12 +63,12 @@ header .right ul {
     align-items: center;
 }
 
-header .right ul li :not(.org-btn , .active){
+header .right ul li :not(.org-btn, .active) {
     color: var(--fontblack);
     font-size: 15px;
 }
 
-.org-btn{
+.org-btn {
     padding: 15px 35px;
     background-color: var(--mainorange);
     border-radius: 30px;
@@ -76,7 +77,88 @@ header .right ul li :not(.org-btn , .active){
     transition: all 0.3s;
 }
 
-.active{
+.org-btn:hover {
+    background-color: #e26a03;
+}
+
+.active {
     color: var(--mainorange);
 }
 
+@media only screen and (max-width: 950px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    header .left {
+        width: 100%;
+        padding: 0 5%;
+
+    }
+
+    header .toggle-icon {
+        display: block;
+        
+
+    }
+
+    header .right {
+        width: 100%;
+        background-color: whitesmoke;
+
+    }
+
+    header .right ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    header .right li {
+        transition: all 0.3s;
+    }
+
+    header .right a:not(:last-child) {
+        padding: 15px 5%;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        width: 100%;
+    }
+
+    header .org-btn {
+        display: none;
+    }
+
+    header .right ul li:hover {
+        color: var(--mainorange);
+    }
+
+    header .toggle-icon .icon.hide {
+        display: none;
+    }
+
+    header .right.hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header .logo img {
+        width: 180px;
+    }
+
+    header .toggle-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    header .fa-bars,
+    header .fa-xmark {
+        font-size: 15px;
+    }
+
+    header .right a:not(:last-child) {
+        padding: 10px 5%;
+    }
+}
