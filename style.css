@@ -1,5 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 * {
@@ -16,6 +17,7 @@
     --mainorange: #ff770f;
     --fontblack: rgb(77, 75, 75);
     --heading: berkshire swash;
+    --title:raleway sans-serif;
 }
 
 .logo img {
@@ -93,7 +95,7 @@ header .right ul li :not(.org-btn, .active) {
 .sec1 {
     height: 100vh;
     width: 100%;
-    background:  url(images/bg3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg3.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -103,7 +105,7 @@ header .right ul li :not(.org-btn, .active) {
     background-attachment: fixed;
 }
 
-.sec1 .content h1{
+.sec1 .content h1 {
     font-size: 100px;
     font-weight: 500;
     color: white;
@@ -115,6 +117,96 @@ header .right ul li :not(.org-btn, .active) {
     font-size: 25px;
     color: white;
     margin-bottom: 30px 0;
+}
+
+.sec2 {
+    padding: 9% 8%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec2 .poster {
+    height: 430px;
+    width: 300px;
+    margin-left: 40px;
+    background: url(images/bg4.jpg);
+    background-size: cover;
+    border-radius: 5px; 
+}
+
+.sec2 div:nth-child(3){
+    min-width: 350px;
+    background: url(images/bg5.jpg);
+    background-size: cover;
+    background-position: 80%;
+    box-shadow: 0 30px 30px rgb(196, 196, 196);
+}
+
+.sec2 .content {
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec2 .content h5 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--mainorange);
+    font-family: var(--heading);
+}
+
+.sec2 .content h1 {
+    font-size: 50px;
+    font-family: var(--heading);
+    font-weight: 400; 
+}
+.sec2 .content h4 {
+    font-size: 30px;
+    font-family: var(--title);
+    font-weight: 600; 
+}
+
+.sec2 .content p {
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+    line-height: 1.6rem;
+}
+.sec2 .org-btn{
+    padding: 15px 35px;
+    font-size: 15px;
+    width: 50%;
+    min-width: 200px;
+}
+.sec2 .poster{
+    text-align: center;
+    position: relative;
+}
+.sec2 .poster div{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+
+.sec2 .poster div h1{
+    font-size: 45px;
+    font-family: var(--heading);
+    font-weight: 500;
+    margin-bottom: 20px;  
+    color: white;
+}
+
+.sec2 .poster div h4{
+    font-size: 15px;
+    font-family: var(--title);
+    font-weight: 500;
+    margin-bottom: 10px; 
+    color: white; 
 }
 @media only screen and (max-width: 950px) {
     header {
@@ -131,7 +223,7 @@ header .right ul li :not(.org-btn, .active) {
 
     header .toggle-icon {
         display: block;
-        
+
 
     }
 
