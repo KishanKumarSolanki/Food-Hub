@@ -17,7 +17,7 @@
     --mainorange: #ff770f;
     --fontblack: rgb(77, 75, 75);
     --heading: berkshire swash;
-    --title:raleway sans-serif;
+    --title: raleway sans-serif;
 }
 
 .logo img {
@@ -131,12 +131,12 @@ header .right ul li :not(.org-btn, .active) {
     height: 430px;
     width: 300px;
     margin-left: 40px;
-    background: url(images/bg4.jpg);
+    background: url(images/bg11.jpg);
     background-size: cover;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-.sec2 div:nth-child(3){
+.sec2 div:nth-child(3) {
     min-width: 350px;
     background: url(images/bg5.jpg);
     background-size: cover;
@@ -164,12 +164,13 @@ header .right ul li :not(.org-btn, .active) {
 .sec2 .content h1 {
     font-size: 50px;
     font-family: var(--heading);
-    font-weight: 400; 
+    font-weight: 400;
 }
+
 .sec2 .content h4 {
     font-size: 30px;
     font-family: var(--title);
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .sec2 .content p {
@@ -177,71 +178,135 @@ header .right ul li :not(.org-btn, .active) {
     color: rgb(92, 92, 92);
     line-height: 1.6rem;
 }
-.sec2 .org-btn{
+
+.sec2 .org-btn {
     padding: 15px 35px;
     font-size: 15px;
     width: 50%;
     min-width: 200px;
 }
-.sec2 .poster{
+
+.sec2 .poster {
     text-align: center;
     position: relative;
 }
-.sec2 .poster div{
+
+.sec2 .poster div {
     position: absolute;
     bottom: 10%;
     width: 100%;
 }
 
-.sec2 .poster div h1{
+.sec2 .poster div h1 {
     font-size: 45px;
     font-family: var(--heading);
     font-weight: 500;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     color: white;
 }
 
-.sec2 .poster div h4{
+.sec2 .poster div h4 {
     font-size: 15px;
     font-family: var(--title);
     font-weight: 500;
-    margin-bottom: 10px; 
-    color: white; 
+    margin-bottom: 10px;
+    color: white;
 }
 
-.sec3{
+.sec3 {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
 }
-.sec3 .content{
+
+.sec3 .content {
     padding: 4%;
     text-align: center;
     width: 70%;
 }
-.sec3 .content img{
+
+.sec3 .content img {
     width: 100px;
 }
 
-.sec3 .content h1{
+.sec3 .content h1 {
     margin: 20px;
     font-family: var(--heading);
     font-size: 45px;
     font-weight: 500;
 }
 
-.sec3 .content h4{
+.sec3 .content h4 {
     margin: 35px 0 20px 0;
     font-family: var(--title);
     font-size: 30px;
     font-weight: 600;
 }
-.sec3 .content p{
+
+.sec3 .content p {
     font-size: 15px;
-    color: rgb(92,92,92);
+    color: rgb(92, 92, 92);
     margin-top: 20px;
     line-height: 1.5rem;
+}
+
+.sec4 {
+    background: url(images/bg7.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom : 100px;
+}  
+
+.sec4 .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    background-color: yellow ;
+    transform: translateY(-100px);
+    width: 90%;
+}
+.sec4 .menu div { 
+border: 1px solid var(--mainorange);
+}
+.sec4 .menu .content{
+    align-content: center;
+    text-align: center;
+    padding: 0 12%;
+    background-color: #ffffff;
+}
+.sec4 .content h4 {
+    font-size: 30px;
+    font-family: var(--title);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sec4 .content p{
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 60px;
+    line-height: 1.4rem;
+}
+
+.sec4 .menu span{
+    font-size: 28px;
+    color: rgb(41, 41, 41);
+    border-top: 1px solid black;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.sec4 .menu .image{
+     overflow: hidden;
+}
+
+.sec4  .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 @media only screen and (max-width: 950px) {
     header {
