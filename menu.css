@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --mainorange: #ff770f;
+    --fontblack: rgb(77, 75, 75);
+    --heading: berkshire swash;
+    --title: raleway sans-serif;
+}
+
+.logo img {
+    height: 150px;
+    width: 200px;
+
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .toggle-icon {
+    background-color: var(--mainorange);
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+
+header .fa-bars,
+header .fa-xmark {
+    color: white;
+    font-size: 20px;
+}
+
+header .right {
+    width: 50%;
+}
+
+header .right ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .right ul li :not(.org-btn, .active) {
+    color: var(--fontblack);
+    font-size: 15px;
+}
+
+.org-btn {
+    padding: 15px 35px;
+    background-color: var(--mainorange);
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.org-btn:hover {
+    background-color: #e26a03;
+}
+
+.active {
+    color: var(--mainorange);
+}
+
+
+.menu-page {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg12.jpg);
+    height: 50vh;
+    background-size: cover;
+}
+
+.content img {
+    margin-left: 95px;
+}
+
+.content h1 {
+    color: white;
+    margin-left: 100px;
+    margin-top: 150px;
+    font-family: var(--heading);
+    font-size: 50px;
+
+}
+
+.special-section {
+    padding: 80px 20px;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.special-container {
+    display: flex;
+    justify-content: space-around;
+    /* 🌟 Adds space around items */
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    /* Optional: padding to keep content away from edges */
+}
+
+
+.special-image img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.special-content {
+    max-width: 500px;
+}
+
+.special-content h2 {
+    font-family: var(--heading);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.special-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.item-desc {
+    font-size: 14px;
+    color: #cccccc;
+    margin: 5px 0 10px;
+}
+
+.item-price {
+    color: #f4a261;
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg12.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 7% 0 3% 0;
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+  
+}
+
+footer h1 {
+    font-size: 45px;
+    font-family: var(--heading);
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: white;
+}
+
+footer h2,p {
+    color: white;
+}
