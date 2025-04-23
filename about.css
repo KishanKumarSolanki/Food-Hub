@@ -228,13 +228,7 @@ header .right ul li :not(.org-btn, .active) {
     line-height: 1.4rem;
 }
 
-/* .sec4 .menu span {
-    font-size: 28px;
-    color: rgb(41, 41, 41);
-    border-top: 1px solid black;
-    padding: 20px 0;
-    border-bottom: 1px solid black;
-} */
+
 
 .sec4 .menu .image {
     overflow: hidden;
