@@ -8,7 +8,7 @@
         integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Food Hub</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -16,9 +16,10 @@
     <header>
         <div class="left">
             <div class="logo">
-                <img src="images/logo2.png" alt="">
+                <img src="images/logo2.png" alt="Food Hub Logo">
             </div>
-            <div class="toggle-icon">
+            <h2>Food Hub</h2>
+            <div class="toggle-icon" id="toggleBtn">
                 <div class="icon" id="bar">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -27,25 +28,16 @@
                 </div>
             </div>
         </div>
-        <div class="right hide" id="navbar">
+        <nav class="right" id="navbar">
             <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="menu.html">
-                    <li class="active">Menu</li>
-                </a>
-                <a href="about.html">
-                    <li>About</li>
-                </a>
-                <a href="contact.html">
-                    <li>Contact</li>
-                </a>
-                <a href="#">
-                    <li class="org-btn">Reservation</li>
-                </a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="sign-btn"><a href="#" class="org-btn">Sign in</a></li>
+                <li class="sign-btn"><a href="#" class="org-btn">Login</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <div class="menu-page">
