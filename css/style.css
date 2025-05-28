@@ -126,7 +126,7 @@ header .fa-xmark {
 .sec1 {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg3.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -169,7 +169,7 @@ header .fa-xmark {
 
 .sec2 div:nth-child(3) {
     min-width: 350px;
-    background: linear-gradient(to bottom, transparent, 80%, black),url(images/bg5.jpg);
+    background: linear-gradient(to bottom, transparent, 80%, black),url(../images/bg5.jpg);
     background-size: cover;
     background-position: 80%;
     box-shadow: 0 30px 30px rgb(196, 196, 196);
@@ -283,7 +283,7 @@ header .fa-xmark {
 }
 
 .sec4 {
-    background: url(images/bg7.jpg);
+    background: url(../images/bg7.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -351,7 +351,7 @@ header .fa-xmark {
     height: 430px;
     width: 50%;
     border-radius: 5px;
-    background: linear-gradient(to bottom, transparent, 80%, black), url(images/bg9.jpg);
+    background: linear-gradient(to bottom, transparent, 80%, black), url(../images/bg9.jpg);
     background-size: cover;
     box-shadow: 0 30px 30px rgb(196, 196, 196);
 }

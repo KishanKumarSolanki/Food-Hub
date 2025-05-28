@@ -126,7 +126,7 @@ header .fa-xmark {
 
 .contact-page {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg12.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg12.jpg);
     height: 50vh;
     background-size: cover;
 }
